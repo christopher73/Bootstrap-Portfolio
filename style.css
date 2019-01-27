@@ -4,20 +4,13 @@ html {
 body {
   background-image: url("./attributes/city.jpg");
   background-size: 100% auto;
-  height: 100%;
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px; /* Set the fixed height of the footer here */
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
+  background-color: black;
+  color: rgb(66, 246, 135);
 }
 img {
   float: left;
@@ -25,34 +18,24 @@ img {
   height: 200px;
 }
 .maincenter {
-  background-color: black;
   opacity: 0.8;
   max-width: 960px;
   background-color: black;
-  color: rgb(200, 206, 170);
   border-radius: 25px;
   color: rgb(66, 246, 135);
 }
-.myname {
-  font-size: 1.5em;
-  color: #dbabab;
-  text-decoration: none;
-}
+
 .myname:hover {
   background-color: rgb(200, 206, 170);
   color: black;
 }
 nav {
   background-color: black;
-  margin-bottom: 10px;
 }
-ul {
-  font-size: 1.5em;
+hr {
+  border-color: white;
 }
-
 li a {
-  text-align: center;
-  text-decoration: none;
   color: #dbabab;
 }
 .nav-link:hover {
@@ -60,23 +43,17 @@ li a {
   color: black;
 }
 
-.footer {
-  background-color: black;
-  color: #dbabab;
-  text-align: center;
-  display: block;
-}
-
 .navbar-toggler {
-  background-color: #dbabab;
+  background-color: rgb(66, 246, 135);
 }
-.sr-only {
-  background-color: rgb(200, 206, 170);
-  color: black;
-}
-
-h1 {
-  font-size: 3.5em;
+.myname {
+  font-size: 1.75em;
+  padding-right: 15px;
+  color: rgb(66, 246, 135);
+  border: rgb(66, 246, 135) solid;
+  animation-name: terminal;
+  animation-duration: 3s;
+  animation-name: terminal;
 }
 .fab {
   font-size: 3em;
@@ -90,9 +67,42 @@ h1 {
   background-color: rgb(66, 246, 135);
   border-color: black;
   color: black;
+  font-size: 1.5em;
+  font: bold;
 }
 .btn:hover {
   background-color: #dbabab;
   color: black;
   border-color: rgb(66, 246, 135);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(66, 246, 135);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(66, 246, 135);
+}
+
+@keyframes terminal {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: rgb(200, 206, 170);
+  }
 }
