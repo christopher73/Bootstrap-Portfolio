@@ -19,14 +19,19 @@ body {
   line-height: 60px; /* Vertically center the text there */
   background-color: #f5f5f5;
 }
+img {
+  float: left;
+  width: 150px;
+  height: 200px;
+}
 .maincenter {
   background-color: black;
   opacity: 0.8;
   max-width: 960px;
   background-color: black;
   color: rgb(200, 206, 170);
-  margin: 0 auto;
   border-radius: 25px;
+  color: rgb(66, 246, 135);
 }
 .myname {
   font-size: 1.5em;
@@ -72,13 +77,22 @@ li a {
 
 h1 {
   font-size: 3.5em;
-  color: rgb(66, 246, 135);
 }
 .fab {
-  color: rgb(66, 246, 135);
   font-size: 3em;
   padding: 15px;
+  color: rgb(66, 246, 135);
 }
 .fab:hover {
   color: #dbabab;
+}
+.btn {
+  background-color: rgb(66, 246, 135);
+  border-color: black;
+  color: black;
+}
+.btn:hover {
+  background-color: #dbabab;
+  color: black;
+  border-color: rgb(66, 246, 135);
 }
